@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ - Sastosaman</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header/Navigation -->
+    <header class="site-header">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="logo">
+            <a href="index.html">Sastosaman</a>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Shop</a></li>
+              <li><a href="categories.html">Categories</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <div class="search-box">
+              <input type="text" placeholder="Search clothing..." />
+              <button><i class="fas fa-search"></i></button>
+            </div>
+            <a href="login.html" class="icon-btn"
+              ><i class="fas fa-user"></i
+            ></a>
+            <a href="cart.html" class="icon-btn cart-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </a>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+      <div class="page-header text-center">
+        <h1>Frequently Asked Questions</h1>
+        <p class="subtitle">
+          Find answers to common questions about shopping with Sastosaman.
+        </p>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-categories">
+          <button class="faq-category-btn active" data-category="general">
+            General
+          </button>
+          <button class="faq-category-btn" data-category="products">
+            Products
+          </button>
+          <button class="faq-category-btn" data-category="orders">
+            Orders & Shipping
+          </button>
+          <button class="faq-category-btn" data-category="returns">
+            Returns & Refunds
+          </button>
+          <button class="faq-category-btn" data-category="account">
+            Account & Payment
+          </button>
+        </div>
+
+        <div class="faq-content">
+          <!-- General FAQs -->
+          <div class="faq-section active" id="general-faqs">
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>What is Sastosaman?</h3>
+                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Sastosaman is a second-hand clothing store based in Nepal that
+                  offers quality pre-loved clothing at affordable prices. We're
+                  committed to promoting sustainable fashion by giving clothes a
+                  second life and reducing textile waste.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>How does Sastosaman source its clothing?</h3>
+                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  We source our clothing through various channels, including
+                  direct purchases from individuals, partnerships with clothing
+                  collectors, and carefully selected imports. All items undergo
+                  a thorough quality check and cleaning process before being
+                  listed for sale.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Do you have a physical store?</h3>
+                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Yes, we have a physical store located in Kathmandu at 123
+                  Fashion Street. Our store hours are Monday to Friday from
+                  10:00 AM to 7:00 PM, Saturday from 11:00 AM to 6:00 PM, and
+                  we're closed on Sundays.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Can I sell my clothes to Sastosaman?</h3>
+                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Yes, we do accept clothing from individuals. Please visit our
+                  physical store with the items you'd like to sell. Our team
+                  will assess the condition, brand, and current demand for the
+                  items to determine if we can accept them and what we can offer
+                  for them.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Products FAQs -->
+          <div class="faq-section" id="products-faqs">
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>How do you determine the condition of clothing?</h3>
+                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>We use a four-tier condition rating system:</p>
+                <ul>
+                  <li>
+                    <strong>Like New:</strong> Items appear unworn or unused,
+                    often with original tags/packaging.
+                  </li>
+                  <li>
+                    <strong>Excellent:</strong> Items show minimal signs of wear
+                    and have been well-maintained.
+                  </li>
+                  <li>
+                    <strong>Good:</strong> Items show some signs of wear
+                    consistent with regular use, but no major flaws.
+                  </li>
+                  <li>
+                    <strong>Fair:</strong> Items show noticeable wear and may
+                    have minor flaws, but remain functional and wearable.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Are the clothes cleaned before being sold?</h3>
+                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Yes, all clothing items undergo a thorough cleaning process
+                  before being listed for sale. Depending on the material and
+                  condition, items are either professionally dry-cleaned or
+                  washed according to their care instructions.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>How often do you add new items?</h3>
+                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  We add new items to our inventory several times a week, both
+                  online and in our physical store. For the latest additions,
+                  check the "New Arrivals" section on our website or follow us
+                  on social media for updates.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Do you sell anything other than clothing?</h3>
+                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Currently, we focus primarily on clothing items. However, we
+                  occasionally offer accessories such as bags, scarves, and
+                  jewelry. We're considering expanding our product range in the
+                  future based on customer demand.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Orders & Shipping FAQs -->
+          <div class="faq-section" id="orders-faqs">
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>What areas do you deliver to?</h3>
+                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  We currently deliver throughout Nepal. Delivery times and
+                  costs vary depending on your location. We offer standard
+                  delivery (3-5 business days) and express delivery (1-2
+                  business days) options.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>How much does shipping cost?</h3>
+                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Standard shipping within Kathmandu Valley costs NRs 150, while
+                  express shipping costs NRs 300. For locations outside the
+                  valley, standard shipping ranges from NRs 200-400 depending on
+                  the distance and accessibility.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>How can I track my order?</h3>
+                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Once your order is dispatched, you'll receive a tracking
+                  number via email or SMS. You can use this number to track your
+                  order on our website or contact our customer service team for
+                  updates.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>What payment methods do you accept?</h3>
+                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>We accept the following payment methods:</p>
+                <ul>
+                  <li>Cash on Delivery (COD)</li>
+                  <li>eSewa</li>
+                  <li>Khalti</li>
+                  <li>Cash or card payment at our physical store</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Returns & Refunds FAQs -->
+          <div class="faq-section" id="returns-faqs">
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>What is your return policy?</h3>
+                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  We accept returns within 7 days of delivery if the item
+                  doesn't match the description or has undisclosed defects. The
+                  item must be in the same condition as when it was shipped,
+                  with all tags and packaging intact.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>How do I return an item?</h3>
+                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  To return an item, please contact our customer service team
+                  within 7 days of receiving your order. They will guide you
+                  through the return process and provide a return authorization.
+                  Return shipping costs are the responsibility of the buyer
+                  unless the return is due to our error.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>How long does it take to process a refund?</h3>
+                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Once we receive and inspect the returned item, refunds are
+                  typically processed within 3-5 business days. The time it
+                  takes for the refund to appear in your account depends on your
+                  payment method and financial institution.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Can I exchange an item instead of returning it?</h3>
+                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Yes, we do offer exchanges if you'd prefer a different size or
+                  item. Please contact our customer service team within 7 days
+                  of receiving your order to arrange an exchange. Note that
+                  exchanges are subject to product availability.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Account & Payment FAQs -->
+          <div class="faq-section" id="account-faqs">
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Do I need to create an account to shop?</h3>
+                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  While you can browse our products without an account, creating
+                  an account is required to make a purchase. Having an account
+                  allows you to track orders, save favorite items, and enjoy a
+                  smoother checkout process for future purchases.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Is my payment information secure?</h3>
+                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Yes, we take security seriously. We use industry-standard
+                  encryption and secure payment gateways to protect your payment
+                  information. We do not store your complete payment details on
+                  our servers.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>How can I change my account information?</h3>
+                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  You can update your account information by logging into your
+                  account and navigating to the "Account Settings" or "Profile"
+                  section. From there, you can modify your personal details,
+                  shipping addresses, and communication preferences.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>What if I forgot my password?</h3>
+                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  If you've forgotten your password, click on the "Forgot
+                  Password" link on the login page. You'll be prompted to enter
+                  your email address, and we'll send you instructions to reset
+                  your password.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-cta">
+        <h2>Still have questions?</h2>
+        <p>
+          If you couldn't find the answer you were looking for, please don't
+          hesitate to contact us.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Sastosaman</h3>
+            <p>
+              Discover quality second-hand clothing at affordable prices. Shop
+              sustainably and give clothes a second life.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Shop</h3>
+            <ul class="filter-list">
+              <li>
+                <a href="#" class="category-filter" data-category="men"
+                  >Men's Clothing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="category-filter" data-category="women"
+                  >Women's Clothing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="category-filter" data-category="kids"
+                  >Kids' Clothing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="category-filter" data-category="winter"
+                  >Winter Wear</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Customer Service</h3>
+            <ul>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="shipping.html">Shipping & Returns</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>About</h3>
+            <ul>
+              <li><a href="about.html">Our Story</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2023 Sastosaman. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const categoryButtons = document.querySelectorAll(".faq-category-btn");
+        const faqSections = document.querySelectorAll(".faq-section");
+
+        categoryButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            categoryButtons.forEach((btn) => btn.classList.remove("active"));
+            this.classList.add("active");
+
+            const category = this.getAttribute("data-category");
+            faqSections.forEach((section) => {
+              section.classList.remove("active");
+              if (section.id === '${category}-faqs') {
+                section.classList.add("active");
+              }
+            });
+          });
+        });
+
+        const faqQuestions = document.querySelectorAll(".faq-question");
+
+        faqQuestions.forEach((question) => {
+          question.addEventListener("click", function () {
+            const faqItem = this.parentElement;
+            const isOpen = faqItem.classList.contains("open");
+
+            document.querySelectorAll(".faq-item").forEach((item) => {
+              item.classList.remove("open");
+              const toggle = item.querySelector(".faq-toggle i");
+              toggle.className = "fas fa-plus";
+            });
+
+            if (!isOpen) {
+              faqItem.classList.add("open");
+              const toggle = this.querySelector(".faq-toggle i");
+              toggle.className = "fas fa-minus";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

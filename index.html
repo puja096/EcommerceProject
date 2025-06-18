@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sastosaman - Quality Second-Hand Clothing</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header/Navigation -->
+    <header class="site-header">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="logo">
+            <a href="index.html">Sastosaman</a>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="products.html">Shop</a></li>
+              <li><a href="categories.html">Categories</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <div class="search-box">
+              <input type="text" placeholder="Search clothing..." />
+              <button><i class="fas fa-search"></i></button>
+            </div>
+            <a href="login.html" class="icon-btn"
+              ><i class="fas fa-user"></i
+            ></a>
+            <a href="cart.html" class="icon-btn cart-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </a>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-image">
+          <img
+            src="http://www.zincmoon.com/wp-content/uploads/2014/11/Second-Obsession-inside-1.jpg"
+            alt="Second-hand clothing rack"
+          />
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="container">
+            <div class="hero-text">
+              <h1>Quality Second-Hand Clothing at Affordable Prices</h1>
+              <p>
+                Discover pre-loved fashion that's kind to your wallet and the
+                planet. Give clothes a second life while expressing your unique
+                style.
+              </p>
+              <div class="hero-buttons">
+                <a href="products.html" class="btn btn-primary">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Categories Section -->
+      <section class="categories-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Shop by Category</h2>
+            <p>
+              Discover quality second-hand clothing across our carefully curated
+              categories.
+            </p>
+          </div>
+          <div class="categories-grid">
+            <a href="products.html?category=men" class="category-card">
+              <div class="category-image">
+                <img
+                  src="https://media.istockphoto.com/id/1189091313/photo/handsome-man-shopping-for-new-clothes-in-store.jpg?s=612x612&w=0&k=20&c=TxJ4B339e64K70sFgw3RU1xDsi7N0LDBZyT9pB29H64="
+                  alt="Men's Clothing"
+                />
+              </div>
+              <div class="category-details">
+                <h3>Men's Clothing</h3>
+                
+              </div>
+            </a>
+            <a href="products.html?category=women" class="category-card">
+              <div class="category-image">
+                <img
+                  src="https://earthday.ca/wp-content/uploads/sites/2/2024/04/seconde-main-825x465.png"
+                  alt="Women's Clothing"
+                />
+              </div>
+              <div class="category-details">
+                <h3>Women's Clothing</h3>
+               
+              </div>
+            </a>
+            <a href="products.html?category=kids" class="category-card">
+              <div class="category-image">
+                <img
+                  src="https://s.alicdn.com/@sc04/kf/He1ba21acb83149c69821556ab93d4d03j.jpg_300x300.jpg"
+                  alt="Kids' Clothing"
+                />
+              </div>
+              <div class="category-details">
+                <h3>Kids' Clothing</h3>
+               
+              </div>
+            </a>
+            <a href="products.html?category=winter" class="category-card">
+              <div class="category-image">
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/047/009/355/large_2x/menswear-store-in-english-countryside-style-autumn-winter-clothing-collection-photo.jpg"
+                  alt="Winter Wear"
+                />
+              </div>
+              <div class="category-details">
+                <h3>Winter Wear</h3>
+                
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Products Section -->
+      <section class="featured-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Featured Finds</h2>
+            <p>Handpicked clothing treasures you don't want to miss.</p>
+          </div>
+          <div class="products-grid" id="featured-products-grid">
+            <!-- Products haru dynamically generated here -->
+          </div>
+          <div class="view-all-btn">
+            <a href="products.html" class="btn btn-secondary"
+              >View All Clothing <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Shop Section -->
+      <section class="why-shop-section">
+        <div class="container">
+          <div class="why-shop-grid">
+            <div class="why-shop-content">
+              <h2>Why Shop Second-Hand?</h2>
+              <p>
+                When you shop with us, you're not just finding unique pieces -
+                you're also:
+              </p>
+              <ul class="benefits-list">
+                <li>
+                  <i class="fas fa-check"></i> Reducing textile waste and giving
+                  clothes a second life
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Supporting sustainable fashion
+                  and consumption
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Discovering unique clothing with
+                  character and history
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Saving money on quality clothing
+                  items
+                </li>
+              </ul>
+              <a href="about.html" class="btn btn-primary"
+                >Learn More About Us</a
+              >
+            </div>
+            <div class="why-shop-image">
+              <img
+                src="//s.alicdn.com/@sc04/kf/Hedfec2a893174b5c822e1a54249fa868l.jpg?avif=close"
+                alt="Sustainable clothing concept"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Sastosaman</h3>
+            <p>
+              Discover quality second-hand clothing at affordable prices. Shop
+              sustainably and give clothes a second life.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Shop</h3>
+            <ul class="filter-list">
+              <li>
+                <a href="#" class="category-filter" data-category="men"
+                  >Men's Clothing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="category-filter" data-category="women"
+                  >Women's Clothing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="category-filter" data-category="kids"
+                  >Kids' Clothing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="category-filter" data-category="winter"
+                  >Winter Wear</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Customer Service</h3>
+            <ul>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="shipping.html">Shipping & Returns</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>About</h3>
+            <ul>
+              <li><a href="about.html">Our Story</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2023 Sastosaman. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const featuredProductsGrid = document.getElementById(
+          "featured-products-grid"
+        );
+        if (featuredProductsGrid) {
+          const featuredProducts = [...products]
+            .sort(() => 0.5 - Math.random())
+            .slice(0, 4);
+
+          featuredProducts.forEach((product) => {
+            const productCard = document.createElement("div");
+            productCard.className = "product-card";
+            productCard.dataset.condition = product.condition;
+            productCard.dataset.size = product.size;
+            productCard.dataset.price = product.price;
+            productCard.dataset.category = product.category;
+
+            productCard.innerHTML = `
+          <div class="product-image">
+            <a href="product-detail.html?id=${product.id}">
+              <img src="${product.image}" alt="${product.name}">
+            </a>
+            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+            ${product.isNew ? '<span class="product-badge">New</span>' : ""}
+          </div>
+          <div class="product-details">
+            <span class="product-category">${product.categoryDisplay}</span>
+            <h3><a href="product-detail.html?id=${product.id}">${
+              product.name
+            }</a></h3>
+            <span class="product-price">NRs ${product.price}</span>
+            <button class="quick-add-btn">Add to Cart</button>
+          </div>
+        `;
+
+            featuredProductsGrid.appendChild(productCard);
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Products - Sastosaman</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header/Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-wrapper">
+        <div class="logo">
+          <a href="index.html">Sastosaman</a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" class="active">Shop</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <div class="search-box">
+            <input type="text" placeholder="Search clothing...">
+            <button><i class="fas fa-search"></i></button>
+          </div>
+          <a href="login.html" class="icon-btn"><i class="fas fa-user"></i></a>
+          <a href="cart.html" class="icon-btn cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+          <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="page-header">
+      <h1>All Products</h1>
+      <p class="subtitle">Discover quality second-hand clothing at affordable prices</p>
+    </div>
+
+    <div class="products-with-filters">
+      <!-- Filters Sidebar -->
+      <div class="filters-sidebar">
+        <div class="filter-header">
+          <h2>Filters</h2>
+          <button class="clear-filters-btn" id="clear-filters-btn">Clear All</button>
+        </div>
+        
+        <div class="filter-section">
+          <h3>Categories</h3>
+          <ul class="filter-list">
+            <li><a href="#" class="category-filter" data-category="men">Men's Clothing</a></li>
+            <li><a href="#" class="category-filter" data-category="women">Women's Clothing</a></li>
+            <li><a href="#" class="category-filter" data-category="kids">Kids' Clothing</a></li>
+            <li><a href="#" class="category-filter" data-category="winter">Winter Wear</a></li>
+          </ul>
+        </div>
+
+        <!-- Price range with input fields -->
+        <div class="filter-section">
+          <h3>Price Range</h3>
+          <div class="price-inputs-only">
+            <div class="price-input-group">
+              <label for="min-price-input">Min Price (NRs):</label>
+              <input type="number" id="min-price-input" value="0" min="0" max="3000">
+            </div>
+            <div class="price-input-group">
+              <label for="max-price-input">Max Price (NRs):</label>
+              <input type="number" id="max-price-input" value="3000" min="0" max="3000">
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <h3>Condition</h3>
+          <div class="filter-checkboxes">
+            <label class="checkbox-label">
+              <input type="checkbox" name="condition" value="like-new">
+              <span class="checkbox-custom"></span>
+              Like New
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="condition" value="excellent">
+              <span class="checkbox-custom"></span>
+              Excellent
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="condition" value="good">
+              <span class="checkbox-custom"></span>
+              Good
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="condition" value="fair">
+              <span class="checkbox-custom"></span>
+              Fair
+            </label>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <h3>Size</h3>
+          <div class="filter-checkboxes">
+            <label class="checkbox-label">
+              <input type="checkbox" name="size" value="xs">
+              <span class="checkbox-custom"></span>
+              XS
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="size" value="s">
+              <span class="checkbox-custom"></span>
+              S
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="size" value="m">
+              <span class="checkbox-custom"></span>
+              M
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="size" value="l">
+              <span class="checkbox-custom"></span>
+              L
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="size" value="xl">
+              <span class="checkbox-custom"></span>
+              XL
+            </label>
+          </div>
+        </div>
+
+        <button class="btn btn-primary apply-filters-btn">Apply Filters</button>
+        
+        
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-container">
+        
+        <div id="filter-feedback" class="filter-feedback"></div>
+        
+        <div id="products-grid" class="products-grid active"></div>
+
+       
+        <div class="pagination" id="pagination">
+        
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Sastosaman</h3>
+          <p>Discover quality second-hand clothing at affordable prices. Shop sustainably and give clothes a second life.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Shop</h3>
+          <ul class="filter-list">
+            <li><a href="#" class="category-filter" data-category="men">Men's Clothing</a></li>
+            <li><a href="#" class="category-filter" data-category="women">Women's Clothing</a></li>
+            <li><a href="#" class="category-filter" data-category="kids">Kids' Clothing</a></li>
+            <li><a href="#" class="category-filter" data-category="winter">Winter Wear</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="shipping.html">Shipping & Returns</a></li>
+            <li><a href="size-guide.html">Size Guide</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>About</h3>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+           
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+       
+        <p>&copy; 2023 Sastosaman. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

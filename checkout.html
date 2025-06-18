@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Sastosaman</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header/Navigation -->
+    <header class="site-header">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="logo">
+            <a href="index.html">Sastosaman</a>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Shop</a></li>
+              <li><a href="categories.html">Categories</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <div class="search-box">
+              <input type="text" placeholder="Search clothing..." />
+              <button><i class="fas fa-search"></i></button>
+            </div>
+            <a href="login.html" class="icon-btn"
+              ><i class="fas fa-user"></i
+            ></a>
+            <a href="cart.html" class="icon-btn cart-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </a>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+      <div class="page-header">
+        <h1>Checkout</h1>
+      </div>
+
+      <div class="checkout-container">
+        <div class="checkout-form-container">
+          <form id="checkout-form" class="checkout-form">
+            <div class="checkout-section">
+              <h2>Contact Information</h2>
+
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+977 9878777780"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="checkout-section">
+              <h2>Shipping Address</h2>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name">First Name</label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" id="last-name" name="last-name" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                 
+                  required
+                />
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="city">City</label>
+                  <input type="text" id="city" name="city" required />
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="checkout-section">
+              <h2>Shipping Method</h2>
+              <div class="shipping-options">
+                <label class="shipping-option">
+                  <input
+                    type="radio"
+                    name="shipping"
+                    value="standard"
+                    checked
+                  />
+                  <div class="shipping-option-content">
+                    <div class="shipping-option-info">
+                      <span class="shipping-option-name"
+                        >Standard Shipping</span
+                      >
+                      <span class="shipping-option-description"
+                        >3-5 business days</span
+                      >
+                    </div>
+                    <span class="shipping-option-price">NRs 150</span>
+                  </div>
+                </label>
+                <label class="shipping-option">
+                  <input type="radio" name="shipping" value="express" />
+                  <div class="shipping-option-content">
+                    <div class="shipping-option-info">
+                      <span class="shipping-option-name">Express Shipping</span>
+                      <span class="shipping-option-description"
+                        >1-2 business days</span
+                      >
+                    </div>
+                    <span class="shipping-option-price">NRs 300</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="checkout-section">
+              <h2>Payment Method</h2>
+              <div class="payment-options">
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="cash" checked />
+                  <div class="payment-option-content">
+                   
+                    <span>Cash on Delivery</span>
+                  </div>
+                </label>
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="esewa" />
+                  <div class="payment-option-content">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZJgC6P5DGy4tGSOYPR0iq0i3xQXxMS0K6ZQ&s"
+                      alt="eSewa Payment"
+                      class="payment-logo"
+                    />
+                  </div>
+                </label>
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="khalti" />
+                  <div class="payment-option-content">
+                    <img
+                      src="https://mediaresource.sfo2.digitaloceanspaces.com/wp-content/uploads/2024/04/20100529/khalti-logo-F0B049E67E-seeklogo.com.png"
+                      alt="Khalti Payment"
+                      class="payment-logo"
+                    />
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="checkout-section">
+              <h2>Order Notes (Optional)</h2>
+              <div class="form-group">
+                <textarea
+                  id="order-notes"
+                  name="order-notes"
+                  rows="3"
+                  placeholder="Special instructions for delivery or any other notes"
+                ></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary checkout-btn">
+              Complete Order
+            </button>
+          </form>
+        </div>
+
+        <div class="order-summary-container">
+          <div class="order-summary">
+            <h2>Order Summary</h2>
+
+            <div class="order-items" id="checkout-items">
+              <!-- Order items pani dynamically add hunxa yaha via JavaScript -->
+            </div>
+
+            <div class="order-totals">
+              <div class="order-total-row">
+                <span>Subtotal</span>
+                <span id="checkout-subtotal">NRs 0</span>
+              </div>
+              <div class="order-total-row">
+                <span>Shipping</span>
+                <span id="checkout-shipping">NRs 150</span>
+              </div>
+              <div class="order-total-row total">
+                <span>Total</span>
+                <span id="checkout-total">NRs 0</span>
+              </div>
+            </div>
+
+            <div class="back-to-cart">
+              <a href="cart.html"
+                ><i class="fas fa-chevron-left"></i> Back to Cart</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Sastosaman</h3>
+            <p>
+              Discover quality second-hand clothing at affordable prices. Shop
+              sustainably and give clothes a second life.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Shop</h3>
+            <ul class="filter-list">
+              <li>
+                <a href="#" class="category-filter" data-category="men"
+                  >Men's Clothing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="category-filter" data-category="women"
+                  >Women's Clothing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="category-filter" data-category="kids"
+                  >Kids' Clothing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="category-filter" data-category="winter"
+                  >Winter Wear</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Customer Service</h3>
+            <ul>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="shipping.html">Shipping & Returns</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>About</h3>
+            <ul>
+              <li><a href="about.html">Our Story</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2023 Sastosaman. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      
+      document.addEventListener("DOMContentLoaded", function () {
+ 
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        const checkoutItems = document.getElementById("checkout-items");
+        const checkoutSubtotal = document.getElementById("checkout-subtotal");
+        const checkoutShipping = document.getElementById("checkout-shipping");
+        const checkoutTotal = document.getElementById("checkout-total");
+
+        
+        let subtotal = 0;
+
+        
+        checkoutItems.innerHTML = "";
+
+       
+        cart.forEach((item) => {
+          const itemPrice = parseFloat(item.price.replace("NRs ", ""));
+          const itemTotal = itemPrice * item.quantity;
+          subtotal += itemTotal;
+
+          const itemHTML = `
+          <div class="order-item">
+            <div class="order-item-image">
+              <img src="${item.image}" alt="${item.name}">
+            </div>
+            <div class="order-item-details">
+              <h3>${item.name}</h3>
+              <p>Size: ${item.size}</p>
+              <p>Quantity: ${item.quantity}</p>
+            </div>
+            <div class="order-item-price">
+              NRs ${itemTotal}
+            </div>
+          </div>
+        `;
+
+          checkoutItems.innerHTML += itemHTML;
+        });
+
+      
+        const shipping = 150; 
+        const total = subtotal + shipping;
+
+        checkoutSubtotal.textContent = 'NRs ${subtotal}';
+        checkoutShipping.textContent = 'NRs ${shipping}';
+        checkoutTotal.textContent = 'NRs ${total}';
+
+        
+        const shippingOptions = document.querySelectorAll(
+          'input[name="shipping"]'
+        );
+        shippingOptions.forEach((option) => {
+          option.addEventListener("change", function () {
+            const shippingCost = this.value === "standard" ? 150 : 300;
+            const newTotal = subtotal + shippingCost;
+
+            checkoutShipping.textContent = 'NRs ${shippingCost}';
+            checkoutTotal.textContent = 'NRs ${newTotal}';
+          });
+        });
+
+        const checkoutForm = document.getElementById("checkout-form");
+        if (checkoutForm) {
+          checkoutForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const submitBtn = this.querySelector(".checkout-btn");
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = "Processing...";
+            submitBtn.disabled = true;
+
+           
+            setTimeout(() => {
+              alert(
+                "Order placed successfully! Thank you for shopping with Sastosaman."
+              );
+
+           
+              localStorage.setItem("cart", JSON.stringify([]));
+
+              window.location.href = "index.html";
+            }, 2000);
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
